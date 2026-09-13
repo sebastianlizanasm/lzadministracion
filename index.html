@@ -111,7 +111,7 @@
   .cta-row { display: flex; gap: 14px; margin-top: 34px; flex-wrap: wrap; justify-content: center; }
 
   .facts-strip { border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); background: var(--paper-raised); }
-  .facts-grid { display: grid; grid-template-columns: repeat(3, 1fr); }
+  .facts-grid { display: grid; grid-template-columns: repeat(2, 1fr); }
   .facts-grid .fact { padding: 26px 28px; border-left: 1px solid var(--line); }
   .facts-grid .fact:first-child { border-left: none; }
   .facts-grid .label { font-family: 'Libre Baskerville', serif; font-style: italic; font-size: 0.85rem; color: var(--accent); }
@@ -315,10 +315,6 @@
         <p>Ley N.º 21.442 de Copropiedad Inmobiliaria</p>
       </div>
       <div class="fact">
-        <div class="label">Cobertura</div>
-        <p>Todas las regiones de Chile</p>
-      </div>
-      <div class="fact">
         <div class="label">Contacto</div>
         <p>Respuesta directa por teléfono, WhatsApp o correo</p>
       </div>
@@ -333,7 +329,7 @@
           <h2>Administración de edificios y condominios</h2>
         </div>
         <div>
-          <p>LZ Administración presta servicios de administración de edificios y condominios, con cobertura para actuar en todas las regiones de Chile conforme a la Ley N.º 21.442 de Copropiedad Inmobiliaria, la normativa vigente que regula la vida en comunidad: registro de administradores, plazos y procedimientos para los gastos comunes, y estándares de seguridad y convivencia.</p>
+          <p>LZ Administración presta servicios de administración de edificios y condominios conforme a la Ley N.º 21.442 de Copropiedad Inmobiliaria, la normativa vigente que regula la vida en comunidad: registro de administradores, plazos y procedimientos para los gastos comunes, y estándares de seguridad y convivencia.</p>
           <p>Trabajamos directamente con cada comunidad para mantener la administración ordenada, la comunicación clara con los copropietarios y el cumplimiento de las obligaciones que exige la ley.</p>
           <blockquote class="cite"><b>Ley N.º 21.442</b> — Ley de Copropiedad Inmobiliaria. Reemplaza la normativa de 1997 y establece el marco legal vigente para la administración de edificios y condominios en Chile.</blockquote>
         </div>
@@ -374,13 +370,6 @@
             <p>Coordinación de mantenciones y contratistas para el edificio o condominio.</p>
           </div>
         </div>
-        <div class="service-item">
-          <div class="num">05</div>
-          <div>
-            <h3>Cobertura nacional</h3>
-            <p>Administración para comunidades en cualquier región del país.</p>
-          </div>
-        </div>
       </div>
     </div>
   </section>
@@ -391,7 +380,6 @@
       <ul class="benefits-list">
         <li><b>Cumplimiento con la Ley N.º 21.442:</b> administración conforme al marco legal vigente, sin sorpresas normativas.</li>
         <li><b>Gastos comunes transparentes:</b> presupuesto, cobranza y rendición de cuentas claras para toda la comunidad.</li>
-        <li><b>Cobertura en todo Chile:</b> atendemos comunidades en cualquier región del país.</li>
         <li><b>Contacto directo:</b> respuesta por teléfono, WhatsApp o correo, sin intermediarios.</li>
       </ul>
     </div>
@@ -433,7 +421,7 @@
 
       <div class="contact-grid">
         <div class="contact-form-card">
-          <h3>Asesoría gratuita</h3>
+          <h3>Contáctenos</h3>
           <form id="contact-form">
             <div class="field">
               <label for="f-nombre">Nombre</label>
@@ -451,10 +439,10 @@
               <label for="f-mensaje">Mensaje</label>
               <textarea id="f-mensaje" name="mensaje" required></textarea>
             </div>
-            <p class="form-note">Al enviar, se abrirá su programa de correo con el mensaje ya redactado, listo para confirmar el envío.</p>
             <div>
               <button class="btn" type="submit" style="border:none; cursor:pointer;">Enviar mensaje</button>
             </div>
+            <p class="form-note">Al enviar este formulario, aceptas ser contactado por LZ Administración.</p>
             <div class="form-status" id="form-status" role="status"></div>
           </form>
         </div>
@@ -474,11 +462,7 @@
           </div>
           <div class="row">
             <div class="label">Correo</div>
-            <a class="value" href="mailto:sebastian.lizana.sm@icloud.com">sebastian.lizana.sm@icloud.com</a>
-          </div>
-          <div class="row">
-            <div class="label">Cobertura</div>
-            <p style="margin:0; color: var(--ink);">Todas las regiones de Chile</p>
+            <a class="value" href="mailto:contacto@lzadministracion.cl">contacto@lzadministracion.cl</a>
           </div>
         </div>
       </div>
@@ -504,7 +488,7 @@
   (function () {
     var form = document.getElementById('contact-form');
     var status = document.getElementById('form-status');
-    var dest = 'sebastian.lizana.sm@icloud.com';
+    var dest = 'contacto@lzadministracion.cl';
     form.addEventListener('submit', function (e) {
       e.preventDefault();
       var nombre = form.nombre.value.trim();
